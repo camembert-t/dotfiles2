@@ -2,6 +2,7 @@
 "* pass *
 " let g:python3_host_prog = substitute(system('which python3'),"\n","","")
 " let g:python3_host_prog = expand('~/.pyenv/versions/3.8.0/envs/develop/bin/python')
+let g:python3_host_prog = '/usr/bin/python3'
 
 "* setting *
 " エンコード
@@ -130,7 +131,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Shougo/deoplete.nvim'
     Plug 'roxma/nvim-yarp'
@@ -142,7 +143,7 @@ call plug#begin('~/.vim/plugged')
 
   " git
   Plug 'airblade/vim-gitgutter'
-  Plug 'tpope/vim-fugitive'
+  "Plug 'tpope/vim-fugitive'
 
   " markdown
   Plug 'iamcco/mathjax-support-for-mkdp', { 'for': 'markdown' }

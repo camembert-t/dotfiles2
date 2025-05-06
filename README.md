@@ -20,4 +20,4 @@ cd ~/.myconfig/dotfiles2
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Customization
 - https://aamnah.com/notes/sysadmin/zsh-custom-theme-ultimate-guide/
-
+- https://github.com/neovim/neovim/blob/master/INSTALL.md

@@ -1,7 +1,8 @@
 #!/bin/sh
 
 echo "*** zsh & oh-my-zsh ***"
-sudp apt-get install -y zsh
+brew install zsh
+chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -s ~/.myconfig/dotfiles2/mytheme.zsh-theme ~/.oh-my-zsh/custom/themes/mytheme.zsh-theme
 ln -s ~/.myconfig/dotfiles2/zshrc ~/.zshrc
@@ -15,14 +16,14 @@ exec zsh
 
 
 echo "*** nvim ***"
-sudo apt-get install -y neovim
-sudo apt-get install -y python3-neovim
+brew install neovim
 ln -s ~/.myconfig/dotfiles2/vimrc ~/.config/nvim/init.vim
+pip3 install pynvim
 
 
 echo "*** tools ***"
-sudo apt-get install -y tmux
+brew install tmux
 ln -s ~/.myconfig/dotfiles2/tmux.conf ~/.tmux.conf
-sudo apt-get install -y universal-ctags
-sudo apt-get install -y silversearcher-ag
-sudo apt-get install -y fzf
+brew install universal-ctags
+brew install the_silver_searcher
+brew install fzf
