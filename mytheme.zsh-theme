@@ -1,6 +1,6 @@
 
 PROMPT='
-$fg[yellow][ $fg[red]%n@%m: %~ $fg[yellow]] $(git_prompt_info)
+$fg[yellow][ $fg[red]%n: %~ $fg[yellow]] $(git_prompt_info)
 $fg[green]⟩⟩⟩ $reset_color'
 
 # git theming
