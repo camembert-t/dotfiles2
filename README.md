@@ -1,8 +1,7 @@
-# dotfiles2 for ubuntu
+# dotfiles2 for mac
 
 ### git clone
 ```sh
-sudo apt-get install -y git
 mkdir -p -v ~/.myconfig
 cd ~/.myconfig
 git clone https://github.com/camembert-t/dotfiles2.git
